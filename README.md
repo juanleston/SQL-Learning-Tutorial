@@ -4,9 +4,9 @@ The purpose of this repository is to serve as a practical study guide for SQL le
 
 ## 1. Contents
 
-- DVD_practice: PostgreSQL Script with SQL coding excercises.
-- dvdrental.tar: .tar file used to backup the database schema and data into PgAdmin.
-- PostgreSQL-Sample-Database.png: Entity Relationship Diagram for reference.
+  - DVD_practice: PostgreSQL Script with SQL coding excercises.
+  - dvdrental.tar: .tar file used to backup the database schema and data into PgAdmin.
+  - PostgreSQL-Sample-Database.png: Entity Relationship Diagram for reference.
 
 ## 2. Installation
 
@@ -66,8 +66,16 @@ The installation steps are as follows:
 
 ## 4. Credits
 
+Resources used to build this repository include:
+
+  - Udemy: "The Complete SQL Bootcamp 2022: Go from Zero to Hero" by Jose Portilla (https://www.udemy.com/course/the-complete-sql-bootcamp/).
+  - W3 Schools: SQL Tutorial (https://www.w3schools.com/sql/).
 
 ## 5. License
+
+![image](https://user-images.githubusercontent.com/60116541/142733137-9ed23afb-0ee8-468e-b0f0-f90f60e70f3c.png)
+
+This work is licensed under a Creative Commons Attribution 3.0 International License
 
 
 ## 6. Conclusions
