@@ -4,7 +4,8 @@ The purpose of this repository is to serve as a practical study guide for SQL le
 
 ## 1. Contents
 
-  - DVD_practice: PostgreSQL Script with SQL coding excercises.
+  - Completed Exercises: PostgreSQL Script with completed SQL coding excercises for reference.
+  - Empty Execises: Empty SQL practice exercises for user input.
   - dvdrental.tar: .tar file used to backup the database schema and data into PgAdmin.
   - PostgreSQL-Sample-Database.png: Entity Relationship Diagram for reference.
 
@@ -56,13 +57,24 @@ The installation steps are as follows:
 
   ### 2.4 Run your first Query:
   
-   - Right-click on the created database and select "Query Tool".
-   - Inside the "Query Tool" tab is where you can perform any queries to retrieve data from the database.
-   - To open the "DVD_practice" script to use as reference for your own learning, click on the folder icon at the top left corner of the query tool.
-   - Select the file path to the "DVD_practice" file.
+   - Right-click on the created database and select "Query Tool". Inside the "Query Tool" tab is where you can perform any queries to retrieve data from the database.
+   - To open the "Empty Exercises" script to practice writing your queries, click on the folder icon at the top left corner of the query tool and select the file path to the file.
+   - Repeat the previous step to open the "Completed Exercises" script to use as a guide while learning.
 
 ## 3. Usage
 
+Example of usage:
+
+  - Open the Empty Exercises script:
+
+![image](https://user-images.githubusercontent.com/60116541/142734302-9f87570b-9257-4b18-8fd5-2d1f21e09349.png)
+
+  - Read the prompt and try to write your own query to perform the propmt action.
+  - Run the query by highlighting it and pressing F5.
+  - Review the results at the bottom of the query editor.
+  - Compare the syntax of your query againt the ones present in the Completed Exercises script:
+
+![image](https://user-images.githubusercontent.com/60116541/142734331-00d4a794-2d67-4fd4-8c69-89f724c1a8d8.png)
 
 ## 4. Credits
 
