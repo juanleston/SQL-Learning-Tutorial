@@ -76,6 +76,8 @@ Example of usage:
 
 ![image](https://user-images.githubusercontent.com/60116541/142734331-00d4a794-2d67-4fd4-8c69-89f724c1a8d8.png)
 
+  - Note: remember to use the DVD rental ERD file to check the schema of the database and existing relationships between tables.
+
 ## 4. Credits
 
 Resources used to build this repository include:
