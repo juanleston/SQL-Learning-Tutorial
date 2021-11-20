@@ -1,0 +1,264 @@
+--SELECT:
+
+	--Select all data:
+
+	--Select distinct rows:
+
+	--Select distinct rental rates from film table:
+
+	--Count how many different rental rates exist:
+
+--WHERE:
+
+	--Select all records with a rental rate of less than $3:
+
+	--Select all records where the rating is 'R':
+
+--AND, OR, NOT:
+
+	--Select all records where the rating is 'R' and the rental rate is 4.99:
+
+	--Select all records where the rating is 'R' or the length is greater than a 100 minutes:
+
+	--Select all records where the rating is not 'R':
+
+-- COMBINING AND, OR, NOT:
+
+	--Select all films where the rating equals 'R', and the lenght is less than 80 minutes or greater than a 100 minutes:
+
+	--Select all films where the rating is not 'R' or 'PG-13':
+
+--ORDER BY:
+
+	--Select all records from the film table and order by length in descending order:
+
+	--Selet all records from the film table and order by length and replacement cost:
+	
+	--Selet all records from the film table and order by length in descending order and replacement cost in ascending order:
+
+--INSERT INTO (to insert a record into an existing table):
+
+	--Insert a test movie into the film table:
+		
+	--Check results:
+
+--NUL Values:
+
+	--Check for any records of the film table with a null description:
+
+--UPDATE (to modify existing records): be careful with the WHERE clause.
+
+	--Update test record (film_id = 1003) title to 'Hanuted House':
+
+--DELETE (to delete existing records from a table):be careful with the WHERE clause
+
+	--Delete the test record:
+
+--LIMIT (to specify the number of records to return):
+
+	--Select first 3 rows of the film table:
+
+	--Select the first 3 rated R movies from the film table:
+
+--MIN and MAX (to return the min or max value of a column):
+
+	--Check minimum rental rate:
+
+--COUNT (to return the number of rows):
+
+	--Check the amount of movies in the film table with a rating of PG-13:
+
+--AVG (to return the average of a numeric column):
+
+	--Check the average rental rate of R rated movies from the film table:
+
+--SUM (to return the sum of a numeric column):
+
+	--Calculate the sum of all payments made from the payment table:
+
+--LIKE (used with a WHERE clause to search for a pattern):
+
+	--Select all movies with titles that begin with the letter 'A':
+
+	--Select all movies with titles that do not begin with the letter 'A':
+
+	--Select all movies with titles that begin with the letter 'C' and end with 'n' (CAPS SENSITIVE):
+
+	--Select all movies with titles that have a title with the letter 'a' in second position:
+
+	--Select all movies with titles that have a title with the letter 'a' in third position:
+
+	--Select all movies with titles that have a title with the letters 'din';
+
+--IN (to specify multiple values in a WHERE clause):
+
+	--Select all movies with rating 'R', 'PG-13' and 'PG':
+
+	--Select all movies with all ratings except 'R', 'PG-13' and 'PG':
+
+--BETWEEN (selects values within a range, it is inclusive):
+
+	--Select all movies from the film table with a length between 60 and 80 minutes:
+
+	--Select all movies from the film table with a length of less than 60 minutes and greater than 80 minutes:
+
+	--Combining BETWEEN AND IN: Select all movies with a length between 60 and 80 minutes, and 'R' rated:
+
+	--Select all movies from the film table with a rating between 'PG' and 'R' (alphabetically):
+
+--AS (to give temporary names to tables and columns):
+
+	--Generate a frequency count of the available land uses:
+
+	--Combine the first and last name of the first five customers from the customer table and diplay their full names:
+
+--JOIN (to combine rows between two or more tables based on a relationship):
+
+	--INNER JOIN: returns records that have matching values in both tables.
+	--LEFT JOIN: returns all records from the left table and the matched records from the right table.
+	--RIGHT JOIN: returns all records from the right table and the matched records from the left table.
+	--FULL JOIN: returns all records when there is a match either on the left or the right table.
+
+	--Join the city (city table) with the country (country table) and sort by country is ascending order:
+
+	--Join the customer first name, last name and address:
+
+	--Join customer first name, last name, phone, address, city, district and postal code (3 table join):
+
+	--Self Join (to join a table with itself):
+
+--UNION (to combine the result set of two or more SELECT statements):
+	--Requirements:
+		--Same number of columns
+		--Similar Data Types
+		--Columns of each SELECT statement need to be in the same order
+
+	--Select 2 first rows of the customer table (first name, last name and email) by customer_id and union it witht the staff records:
+
+--GROUP BY:
+	--Groups rows that have the same values into summary rows.
+	--Often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the results.
+
+	--Create a frequency count of the customer Type present in the last query:
+
+	--Create a count of the rentals that have been serviced by each of the staff members:
+
+	--Create a frequency table of the amount of movies per category (genre):
+
+--HAVING: equivalent to the WHERE clause for aggregate functions:
+
+	--Create a count of the amount of movies per replacement cost. Filter out any movies with a quantity of less than or equal to 27.
+
+--EXISTS: used to test the existence of a record in a subquery (return TRUE if the subquery returns one or more records)
+
+	--Check what is the film_id of the movie titled 'Chamber Italian':
+
+	--Check fot the categoty id of the movie titled 'Chamber Italian' using WHERE EXISTS:
+
+	--Check result:
+
+--ANY AND ALL (allow you to perform a comparison between a single column value and a range of other values):
+
+	--ANY: returns a boolean value (True if any of the subqueries meet the condition, in other words it will be true if any of the values is True)
+
+		--SELECT title and rating of movies where the category_id = 12;
+
+	--ALL: returns boolean value (True if all the subqueries meet the condition)
+
+		--SELECT title and rating of movies where the category_id is 12 and the film_id is 133:
+
+--SELECT INTO: to copy data from one table into a new 
+
+	--Create a copy of the film table:
+
+	--Check results:
+	
+	--Copy only the title and rating columns from the film table into a new table:
+
+	--Check results:
+	
+	--Copy only the title and rating columns from the film table into a new table:
+
+	--Check results:
+	
+--INSERT INTO SELECT: copies data from one table and inserts it into another table (requires that data types in both tables match)
+
+	--Create a copy of the film table's structure (no data, only structure):
+
+	--Copy all records from film table that have a rating of 'R' into the new empty table:
+
+	--Check results:
+
+	--Create another empty table:
+
+	--Only insert the movie titles of R-rated movies into the new table:
+
+	--Check results:
+
+--CASE: goes through conditions and returns a value when the first condition is met (like if-then-else).
+	--Once a condition is TRUE it will stop reading. If no conditions are met the ELSE value is returned.
+	--If there is no ELSE value, it returns NULL.
+	
+	-- Create a column where you clasify who is allowed to watch a movie based on its rating:
+
+--NULL FUNCTIONS: allows you to define an alternative return value to 'Null'
+
+	--Insert a dummy customer into the film table:
+
+	--Check results (notice how the email column value in NULL which is the default returned value):
+
+	--Change the email's default return value for nulls":
+
+--STORED PROCEDURES:
+
+	--Prepared SQL code that can be saved and allows you to execute a set of instructions time after time by simply calling it.
+	--It can be designed to take parameters as inputs so it can be adjusted to diverse situations.
+
+	--WITHOUT PARAMETERS: 
+	
+		--Create a stored procedure to count the rows present in the film table:
+
+		--Execute stored procedure:
+
+		--Check results against regular query:
+
+		--Drop procedure:
+			--DROP PROCEDURE total_films();
+		
+	--WITH PARAMETERS: 
+	
+		--Create a stored procedure to count the amount of films present in the film table greater than a determined replacement cost:
+
+		--Execute stored procedure:
+
+		--Check results against regular query:
+
+	--RETURN TABLE: 
+	
+		--Create a stored procedure to return a table with title and replacement cost of movies greater than a determined replacement cost:*/
+
+		--Execute stored procedure:
+
+		--Check results against regular query:
+
+--VIEWS:
+
+	--Virtual table produced as the result of a SQL query statement.
+	--Generally they do not store any data.
+	--On PostgreSQL you can create Materialized views which do store data (CREATE MATERIALIZED VIEW), and refresh it periodically (REFRESH MATERIALIZED VIEW).
+
+	/*Create a customer master view where it is possible to see first name, last name, email, phone, address,
+	district, postal code, city and country at once:*/
+
+	/*It is not possible to remove columns from an existing view. If you try the following expression
+	it will produce an error:
+	ALTER TABLE customer_master
+	DROP COLUMN district;*/
+	--It is possible to add new columns to a view by running the previous code again (including the new attributes).
+	--To change the name of a view use: ALTER VIEW customer_master RENAME TO customer_info;
+	--To drop a view use: DROP VIEW IF EXISTS customer_info; (if the view has dependent objects include CASCADE after the view name)
+	
+
+
+
+
