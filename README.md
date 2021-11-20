@@ -76,6 +76,3 @@ Resources used to build this repository include:
 ![image](https://user-images.githubusercontent.com/60116541/142733137-9ed23afb-0ee8-468e-b0f0-f90f60e70f3c.png)
 
 This work is licensed under a Creative Commons Attribution 3.0 International License
-
-
-## 6. Conclusions
