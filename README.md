@@ -2,6 +2,8 @@
 
 The purpose of this repository is to serve as a practical study guide for SQL learners and a cheat sheet for future use. The Database Management System of Choice was PostgreSQL due to its open-source and multi-OS characteristics.
 
+The practice database used for the tutorial exercises in the DVD Rental database. This database represents the business processes of a hypothetical DVD rental store.
+
 ## 1. Contents
 
   - Completed Exercises: PostgreSQL Script with completed SQL coding excercises for reference.
