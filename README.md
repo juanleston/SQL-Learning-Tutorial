@@ -63,6 +63,18 @@ The installation steps are as follows:
 
 ## 3. Usage
 
+Example of usage:
+
+  - Open the Empty Exercises script:
+
+![image](https://user-images.githubusercontent.com/60116541/142734302-9f87570b-9257-4b18-8fd5-2d1f21e09349.png)
+
+  - Read the prompt and try to write your own query to perform the propmt action.
+  - Run the query by highlighting it and pressing F5.
+  - Review the results at the bottom of the query editor.
+  - Compare the syntax of your query againt the ones present in the Completed Exercises script:
+
+![image](https://user-images.githubusercontent.com/60116541/142734331-00d4a794-2d67-4fd4-8c69-89f724c1a8d8.png)
 
 ## 4. Credits
 
